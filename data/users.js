@@ -5,13 +5,13 @@ const users = {
     "bradley_cooper@gmail.com": {
         name: "Bradley Cooper", 
         email: "bradley_cooper@gmail.com",
-        password: bcrypt.hashSync("bradley123", salt),
+        password: bcrypt.hashSync(process.env.PASSWORD_1, salt),
         category: "best actor"
     },
     "emmastone@gmail.com": {
         name: "Emma Stone", 
         email: "emmastone@gmail.com",
-        password: bcrypt.hashSync("emma123", salt),
+        password: bcrypt.hashSync(process.env.PASSWORD_2, salt),
         category: "best actress"
     }
 }

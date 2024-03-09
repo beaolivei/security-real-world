@@ -1,4 +1,5 @@
 //imports
+require('dotenv').config()
 
 //external
 const express = require("express");
