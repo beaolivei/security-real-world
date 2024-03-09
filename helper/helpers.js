@@ -1,3 +1,5 @@
+const bcrypt = require("bcrypt")
+
 // authenticate user
 const authenticate = (users,email,password) => {
     const currentUser = users[email]
@@ -7,7 +9,7 @@ const authenticate = (users,email,password) => {
     }
 
     if(currentUser){
-        if (currentUser.password === password){
+        if (bcrypt.compareSync(password, currentUser.password)){
            return {error: undefined, email: email}
         }
     }

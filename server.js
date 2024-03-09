@@ -9,7 +9,7 @@ const port = 8080;
 const cookieSession = require("cookie-session");
 const cookieParser = require("cookie-parser");
 //internal
-const users = require("./data/users");
+const {users} = require("./data/users");
 const { authenticate, getUserByEmail } = require("./helper/helpers");
 
 // view engine
