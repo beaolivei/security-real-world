@@ -1,0 +1,26 @@
+body{
+    display: flex;
+    justify-content: center; 
+}
+
+form {
+    background-color: gray;
+    padding: 20px 10px;
+    border-radius: 10px;
+    color: white;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+input{
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+a {
+    color: white;
+    padding: 20px 0;
+}
